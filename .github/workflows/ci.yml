@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    name: tests
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+    steps:
+      # The Better Humanizer submodule is private; the default GITHUB_TOKEN cannot
+      # clone it, so we intentionally do NOT check out submodules. The test suite
+      # skips the end-to-end scorer tests when the submodule is absent and fully
+      # exercises the pure verdict/aggregation logic with synthetic inputs.
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install (dev extras)
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Lint (ruff)
+        run: ruff check runner tests
+
+      - name: Test
+        run: python -m pytest -q
+
+      - name: Smoke-test the CLI
+        run: |
+          python -m runner.cli doctor || true   # better-humanizer FAIL is expected without the submodule
+          tmp="$(mktemp -d)"
+          python -m runner.cli demo "$tmp/book"
+          python -m runner.cli status "$tmp/book" --json

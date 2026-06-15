@@ -1,0 +1,3 @@
+[submodule "external/better-humanizer"]
+	path = external/better-humanizer
+	url = https://github.com/jodyjdc/better-humanizer

@@ -1,0 +1,56 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node (if any tooling added later)
+node_modules/
+package-lock.json
+
+# Local runner / demos
+.tmp*/
+.demo/
+book-genesis-demo/
+book-genesis-audit-temp*/
+__pycache__/
+*.pyc
+
+# Python build / packaging
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.eggs/
+
+# Output
+output/
+manuscript/
+evaluations/
+delivery/
+voice-bank/
+*.epub
+*.pdf
+*.docx
+
+# State files (user-specific) — but keep the shipped example projects
+STATE.yaml
+PROJECT_STATE.yaml
+!examples/**
+
+# Claude
+.claude/
+
+# Never commit browser profiles or accidental platform caches
+AppData/
+**/AppData/
+**/Chrome/User Data/
+**/Google/Chrome/User Data/
+scripts/distribution/C*/

@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ultimate-best-seller-studio"
+version = "1.0.0"
+description = "File-backed AI book-production pipeline with a measured human-band gate (Better Humanizer). A fork of best-seller-studio."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Jody Cecchetto" }]
+keywords = ["writing", "ai-agents", "book-pipeline", "claude-code", "codex", "humanizer", "stylometry"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Text Processing :: Linguistic",
+]
+# Runtime is intentionally zero-dependency (standard library only), so the runner
+# and the Better Humanizer scorer run anywhere Python 3 runs.
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "ruff>=0.4"]
+
+[project.urls]
+Homepage = "https://github.com/jodyjdc/ultimate-best-seller-studio"
+"Better Humanizer" = "https://github.com/jodyjdc/better-humanizer"
+Upstream = "https://github.com/felipelobomotta-blip/best-seller-studio"
+
+[project.scripts]
+ubss = "runner.cli:main"
+book-genesis = "runner.cli:main"
+
+[tool.setuptools]
+packages = ["runner"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+# Real-bug + style + import-order rules. pyupgrade (UP) is deliberately NOT selected:
+# the inherited runner uses typing.Dict/List on purpose (stdlib-only, 3.9 floor), and
+# we do not want lint churn on it.
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = ["E501"]  # long lines tolerated in prose-heavy strings
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["E402"]
+"runner/cli.py" = ["E402"]
