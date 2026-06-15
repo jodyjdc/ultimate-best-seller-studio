@@ -1,5 +1,5 @@
 ---
-name: book-genesis-codex
+name: book-genesis-core
 description: Use when the user wants the portable Book Genesis pipeline for Claude Code, Codex, Antigravity, Kimi, or another file-aware agent: intake, foundation, architecture, drafting, adversarial audit, Genesis Score, and editorial package with durable project files.
 ---
 
@@ -7,7 +7,7 @@ description: Use when the user wants the portable Book Genesis pipeline for Clau
 
 Book Genesis Universal Core is Felipe's portable book-production pipeline for file-aware AI agents. It works in Claude Code, Codex, Antigravity, Kimi, and similar tools that can read project files and write artifacts.
 
-The skill folder is still named `book-genesis-codex` for compatibility with existing installs and slash commands. The workflow is not Codex-only. It is the canonical lightweight workflow for new runs, separate from the legacy V4/V5 multi-skill system kept elsewhere in this repository.
+The skill folder is still named `book-genesis-core` for compatibility with existing installs and slash commands. The workflow is not Codex-only. It is the canonical lightweight workflow for new runs, separate from the legacy V4/V5 multi-skill system kept elsewhere in this repository.
 
 Use this skill for:
 
@@ -60,7 +60,7 @@ Read only the prompt for the active phase:
 - Architecture: `references/prompts/architecture.md`
 - Drafting: `references/prompts/drafting.md`
 - Adversarial Audit: `references/prompts/adversarial-audit.md`
-- Final Score: `references/scoring/genesis-score-codex.md`
+- Final Score: `references/scoring/genesis-score.md`
 - Editorial Package: `references/prompts/editorial-package.md`
 
 `references/prompts/orchestrator.md` contains the portable orchestration rules.

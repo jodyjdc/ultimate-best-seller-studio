@@ -4,25 +4,25 @@ Book Genesis is agent-agnostic by design. It is a folder of markdown instruction
 
 The repository has two layers:
 
-1. The **Universal Book Genesis Core** in `skills/book-genesis-codex/`.
+1. The **Universal Book Genesis Core** in `skills/book-genesis-core/`.
 2. The legacy Claude Code system in `skills/`, `agents/`, and `knowledge/`.
 
-The `book-genesis-codex` folder name is historical and kept for compatibility. It does not mean the pipeline only works in Codex.
+The `book-genesis-core` folder name is historical and kept for compatibility. It does not mean the pipeline only works in Codex.
 
 ## Minimum Portable Package
 
 Minimum:
 
 ```text
-skills/book-genesis-codex/
+skills/book-genesis-core/
 ```
 
 Recommended:
 
 ```text
 AGENTS.md
-skills/book-genesis-codex/
-docs/book-genesis-codex.md
+skills/book-genesis-core/
+docs/book-genesis-core.md
 docs/portability.md
 docs/humanizer-pro-integration.md
 ```
@@ -48,7 +48,7 @@ The installer copies the full skill folders into `~/.claude/skills/`, including 
 Invocation:
 
 ```text
-/book-genesis-codex
+/book-genesis-core
 ```
 
 The older commands remain available:
@@ -62,7 +62,7 @@ Codex can use the core directly from the repo or from Felipe's local skill direc
 
 Expected behavior:
 
-- load `AGENTS.md` or `skills/book-genesis-codex/SKILL.md`
+- load `AGENTS.md` or `skills/book-genesis-core/SKILL.md`
 - read `references/pipeline/manifest.yaml`
 - load only the active phase prompt
 - write project state and artifacts to files
@@ -73,7 +73,7 @@ Expected behavior:
 Antigravity-style IDEs do not need native skill support. Open the repository and tell the agent:
 
 ```text
-Use Book Genesis. Follow AGENTS.md and the phase order in skills/book-genesis-codex/references/pipeline/manifest.yaml.
+Use Book Genesis. Follow AGENTS.md and the phase order in skills/book-genesis-core/references/pipeline/manifest.yaml.
 Persist every important decision to files.
 Only load the active phase prompt.
 Do not skip adversarial audit.
@@ -83,8 +83,8 @@ If the agent asks for the relevant files, provide:
 
 ```text
 AGENTS.md
-skills/book-genesis-codex/SKILL.md
-skills/book-genesis-codex/references/pipeline/manifest.yaml
+skills/book-genesis-core/SKILL.md
+skills/book-genesis-core/references/pipeline/manifest.yaml
 ```
 
 ## Kimi
@@ -92,7 +92,7 @@ skills/book-genesis-codex/references/pipeline/manifest.yaml
 Kimi can run Book Genesis as a file-backed playbook. Use the same package:
 
 ```text
-skills/book-genesis-codex/
+skills/book-genesis-core/
 ```
 
 Then give this instruction:
@@ -116,7 +116,7 @@ The minimum requirements are:
 Use this generic instruction:
 
 ```text
-Run Book Genesis as a file-backed book production pipeline. Read AGENTS.md first. Use skills/book-genesis-codex/SKILL.md as the operating loop. Follow the manifest exactly. Load only the active phase prompt. Persist decisions to files. Never score before adversarial audit.
+Run Book Genesis as a file-backed book production pipeline. Read AGENTS.md first. Use skills/book-genesis-core/SKILL.md as the operating loop. Follow the manifest exactly. Load only the active phase prompt. Persist decisions to files. Never score before adversarial audit.
 ```
 
 ## Why It Ports Cleanly

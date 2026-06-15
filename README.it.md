@@ -49,7 +49,7 @@ e corpora di conoscenza.
 ## Compatibilità
 
 **Pensato prima di tutto per [Claude Code](https://claude.ai/code)** (skill + agenti nativi,
-slash command `/book-genesis-codex`, `/humanizer-pro`). **Gira anche su qualsiasi agente che
+slash command `/book-genesis-core`, `/humanizer-pro`). **Gira anche su qualsiasi agente che
 legge file** — Codex, Antigravity, Kimi — puntandolo a [`AGENTS.md`](AGENTS.md). Il runner
 Python e lo scoring (`stylo.py`) danno gli **stessi numeri ovunque**: il gate di banda umana è
 riproducibile bit-per-bit. Cambia solo il modello che scrive il testo.

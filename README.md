@@ -93,16 +93,16 @@ is automatic.
 
 **Built for [Claude Code](https://claude.ai/code) first** — that's where it's most native:
 skills load from `~/.claude/skills/`, agents from `~/.claude/agents/`, and you invoke them
-with slash commands (`/book-genesis-codex`, `/humanizer-pro`).
+with slash commands (`/book-genesis-core`, `/humanizer-pro`).
 
 **It also runs on any file-aware agent** — Codex, Antigravity, Kimi, and others — because the
 product is a reproducible folder of markdown, manifests, and contracts, not a binary:
 
 | Agent | How to run it |
 |---|---|
-| **Claude Code** | `./install.sh`, then `/book-genesis-codex` · `/humanizer-pro` (first-class) |
+| **Claude Code** | `./install.sh`, then `/book-genesis-core` · `/humanizer-pro` (first-class) |
 | **Codex** | open the repo, point Codex at [`AGENTS.md`](AGENTS.md) and ask it to run the pipeline |
-| **Antigravity / Kimi / other** | open the repo and follow `AGENTS.md`; pass the `skills/book-genesis-codex/` folder |
+| **Antigravity / Kimi / other** | open the repo and follow `AGENTS.md`; pass the `skills/book-genesis-core/` folder |
 
 What's **identical everywhere**: the markdown skills/prompts, the Python runner (`ubss`,
 `doctor`, `humanize-score`), and the stylometric scoring — `stylo.py` returns the same

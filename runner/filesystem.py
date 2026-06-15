@@ -7,7 +7,7 @@ from pathlib import Path
 from typing import Dict, List
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-SKILL_ROOT = REPO_ROOT / "skills" / "book-genesis-codex"
+SKILL_ROOT = REPO_ROOT / "skills" / "book-genesis-core"
 MANIFEST_PATH = SKILL_ROOT / "references" / "pipeline" / "manifest.yaml"
 
 
@@ -44,7 +44,7 @@ ARTIFACT_HEADINGS: Dict[str, str] = {
     "06-emotional-curve.md": "Emotional Curve",
     "07-opening-strategy.md": "Opening Strategy",
     "08-adversarial-audit.md": "Adversarial Audit",
-    "09-genesis-score-codex.md": "Genesis Score",
+    "09-genesis-score.md": "Genesis Score",
     "10-editorial-package.md": "Editorial Package",
 }
 

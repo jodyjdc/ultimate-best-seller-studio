@@ -5,7 +5,7 @@ description: Use when the user wants to create, plan, draft, evaluate, revise, p
 
 # Book Genesis
 
-Book Genesis is Felipe's local book-production pipeline adapted for Codex. It uses the newer `book-genesis-codex` core as the canonical workflow.
+Book Genesis is Felipe's local book-production pipeline adapted for Codex. It uses the newer `book-genesis-core` core as the canonical workflow.
 
 Use this skill for:
 
@@ -67,7 +67,7 @@ Read only the prompt for the active phase:
 - Drafting: `references/prompts/drafting.md`
 - Adversarial Audit: `references/prompts/adversarial-audit.md`
 - Literary Barrier Revision Loop: `references/prompts/literary-barrier-loop.md`
-- Final Score: `references/scoring/genesis-score-codex.md`
+- Final Score: `references/scoring/genesis-score.md`
 - Editorial Package: `references/prompts/editorial-package.md`
 
 `references/prompts/orchestrator.md` contains the portable orchestration rules.

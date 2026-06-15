@@ -1,6 +1,6 @@
 # FAQ -- Book Genesis
 
-> Current note: the default workflow for new projects is the Universal Book Genesis Core in `skills/book-genesis-codex/`. The folder name is historical; the workflow is designed for Claude Code, Codex, Antigravity, Kimi, and other file-aware agents. The older V4/V5 answers below are kept for historical and legacy Claude Code usage.
+> Current note: the default workflow for new projects is the Universal Book Genesis Core in `skills/book-genesis-core/`. The folder name is historical; the workflow is designed for Claude Code, Codex, Antigravity, Kimi, and other file-aware agents. The older V4/V5 answers below are kept for historical and legacy Claude Code usage.
 
 ---
 
@@ -8,9 +8,9 @@
 
 ### What is Book Genesis?
 
-Book Genesis is a file-backed book production system. The current universal core is `book-genesis-codex`, a portable 7-phase pipeline for Claude Code, Codex, Antigravity, Kimi, and generic agent IDEs. The repository also preserves the older V4/V5 Claude Code skill network: 17 phases, specialized skills, Genesis Score, commercial viability prediction, anti-AI pattern checks, and automated revision loops.
+Book Genesis is a file-backed book production system. The current universal core is `book-genesis-core`, a portable 7-phase pipeline for Claude Code, Codex, Antigravity, Kimi, and generic agent IDEs. The repository also preserves the older V4/V5 Claude Code skill network: 17 phases, specialized skills, Genesis Score, commercial viability prediction, anti-AI pattern checks, and automated revision loops.
 
-For the current architecture, start with `docs/book-genesis-codex.md`.
+For the current architecture, start with `docs/book-genesis-core.md`.
 
 ### What changed from V2 to V4?
 
@@ -177,7 +177,7 @@ On Windows PowerShell:
 .\install.ps1
 ```
 
-Skills are installed to `~/.claude/skills/`. Modern multi-file skills, including `book-genesis-codex`, must be copied as full directories because their references live outside `SKILL.md`.
+Skills are installed to `~/.claude/skills/`. Modern multi-file skills, including `book-genesis-core`, must be copied as full directories because their references live outside `SKILL.md`.
 
 ### Can I use individual skills without the full pipeline?
 

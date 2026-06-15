@@ -1,6 +1,6 @@
 # Genesis V5 Philosophy -- Why Fewer Skills Produce Better Books
 
-> Current note: this philosophy directly informed the Universal Book Genesis Core in `skills/book-genesis-codex/`. The current workflow keeps the "fewer active constraints while drafting" lesson and makes it portable across Claude Code, Codex, Antigravity, Kimi, and other agent tools.
+> Current note: this philosophy directly informed the Universal Book Genesis Core in `skills/book-genesis-core/`. The current workflow keeps the "fewer active constraints while drafting" lesson and makes it portable across Claude Code, Codex, Antigravity, Kimi, and other agent tools.
 
 ## The Data
 

@@ -1,6 +1,6 @@
 # Literary Barrier Revision Loop
 
-You are responsible for Phase 5 of `book-genesis-codex`.
+You are responsible for Phase 5 of `book-genesis-core`.
 
 ## Goal
 

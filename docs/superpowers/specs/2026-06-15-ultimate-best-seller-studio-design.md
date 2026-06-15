@@ -51,9 +51,10 @@ Not a web app: a Claude Code / Codex **skills + agents book-production pipeline*
 
 5. **Rebrand the product layer, keep internal slugs stable.** Repo, README (EN + IT +
    PT), landing page, banners, AGENTS.md intro, installer text → "Ultimate Best Seller
-   Studio". Internal skill slugs (`book-bestseller-studio`, `book-genesis-codex`) stay —
-   they are referenced by code, tests, and ~dozens of cross-links; renaming is churn with
-   no user-visible payoff. Engine codename "book-genesis" preserved.
+   Studio". Internal skill slugs (`book-bestseller-studio`) stay — referenced by code,
+   tests, and ~dozens of cross-links. Engine codename "book-genesis" preserved.
+   (Updated in 1.0.1: the `book-genesis-codex` slug WAS renamed → `book-genesis-core`,
+   because "codex" on a Claude-first install is misleading; see CHANGELOG.)
 
 6. **Attribution / MIT.** Preserve the original `LICENSE` copyright line verbatim, append
    the user's copyright for modifications, add a `NOTICE` crediting the upstream author

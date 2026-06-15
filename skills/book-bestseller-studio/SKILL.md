@@ -5,7 +5,7 @@ description: Use when the user wants a complete book-production system aimed at 
 
 # Book Bestseller Studio
 
-This is the umbrella skill for creating a complete book at market level. It does not replace `book-genesis` or the portable `book-genesis-codex` core; it coordinates the specialist skills and adds commercial gates.
+This is the umbrella skill for creating a complete book at market level. It does not replace `book-genesis` or the portable `book-genesis-core` core; it coordinates the specialist skills and adds commercial gates.
 
 Use this when the user says things like:
 

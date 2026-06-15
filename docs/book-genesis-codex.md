@@ -5,14 +5,14 @@ The Universal Book Genesis Core is the portable, reduced-pressure version of Boo
 The implementation lives at:
 
 ```text
-skills/book-genesis-codex/
+skills/book-genesis-core/
   SKILL.md
   agents/openai.yaml
   references/
     pipeline/manifest.yaml
     pipeline/phases.md
     prompts/
-    scoring/genesis-score-codex.md
+    scoring/genesis-score.md
     legacy-v4-book-genesis.md
 ```
 
@@ -28,7 +28,7 @@ tests/
 
 The runner scaffolds projects, prepares phase packets, validates required files, advances gates, prepares optional Book Swarm Panel/MiroFish bridge folders, and writes specialist agent packets for Book Bestseller Studio. It does not call a model or generate real prose.
 
-The folder name `book-genesis-codex` is historical and preserved so existing commands and installs keep working. The product positioning is broader: **Book Genesis is a universal book pipeline for AI agents.**
+The folder name `book-genesis-core` is historical and preserved so existing commands and installs keep working. The product positioning is broader: **Book Genesis is a universal book pipeline for AI agents.**
 
 ## Why It Exists
 
@@ -48,7 +48,7 @@ The universal core makes a different bet:
 
 | Agent | Status | Notes |
 |-------|--------|-------|
-| Claude Code | Native skill | Install the full folder and run `/book-genesis-codex` |
+| Claude Code | Native skill | Install the full folder and run `/book-genesis-core` |
 | Codex | Native repo workflow | Use `AGENTS.md` or the skill folder directly |
 | Antigravity | Agent playbook | Open the repo and follow `AGENTS.md` |
 | Kimi | File-backed workflow | Provide the skill folder or paste the active phase contract |
@@ -131,13 +131,13 @@ The remaining risk is not technical. It is editorial: any AI writing system can 
 For Claude Code:
 
 ```text
-/book-genesis-codex pt-br "memoir sobre burnout e reconstrucao profissional"
+/book-genesis-core pt-br "memoir sobre burnout e reconstrucao profissional"
 ```
 
 For Codex, Antigravity, Kimi, or another repo-aware agent:
 
 ```text
-Use Book Genesis. Read AGENTS.md, then run the manifest in skills/book-genesis-codex/references/pipeline/manifest.yaml one phase at a time.
+Use Book Genesis. Read AGENTS.md, then run the manifest in skills/book-genesis-core/references/pipeline/manifest.yaml one phase at a time.
 ```
 
 For a local mechanical check:

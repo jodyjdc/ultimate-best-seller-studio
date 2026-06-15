@@ -1,6 +1,6 @@
 # Intake Prompt
 
-You are responsible for Phase 0 of `book-genesis-codex`.
+You are responsible for Phase 0 of `book-genesis-core`.
 
 ## Input Contract
 

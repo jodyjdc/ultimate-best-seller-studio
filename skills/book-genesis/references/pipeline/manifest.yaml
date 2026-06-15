@@ -55,10 +55,10 @@ phase_5_literary_barrier_loop:
 
 phase_6_final_score:
   label: "Phase 6: Final Score"
-  prompt: "references/scoring/genesis-score-codex.md"
+  prompt: "references/scoring/genesis-score.md"
   gate: "final_score"
   outputs:
-    - "artifacts/09-genesis-score-codex.md"
+    - "artifacts/09-genesis-score.md"
   next: "Phase 7: Editorial Package"
 
 phase_7_editorial_package:

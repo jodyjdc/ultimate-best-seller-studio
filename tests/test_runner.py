@@ -40,7 +40,7 @@ class RunnerTests(unittest.TestCase):
         swarm = REPO_ROOT / "skills" / "book-swarm-panel" / "SKILL.md"
         self.assertTrue(bestseller.exists())
         self.assertTrue(swarm.exists())
-        self.assertIn("book-genesis-codex", bestseller.read_text(encoding="utf-8"))
+        self.assertIn("book-genesis-core", bestseller.read_text(encoding="utf-8"))
         self.assertIn("MiroFish", swarm.read_text(encoding="utf-8"))
 
     def test_agent_registry_loads_bestseller_team(self) -> None:

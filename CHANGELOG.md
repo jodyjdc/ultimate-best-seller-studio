@@ -1,5 +1,15 @@
 # Changelog
 
+## Ultimate Best Seller Studio 1.0.1 — 2026-06-15
+
+### Renamed
+- Skill `book-genesis-codex` → **`book-genesis-core`**, and its `genesis-score-codex.md`
+  scoring/artifact → `genesis-score.md`. The `-codex` suffix was a misleading historical
+  name: this is the portable *universal core* pipeline that runs on Claude Code first and
+  Codex/Antigravity/etc. too. The new name is accurate; "Codex" remains where it correctly
+  refers to the platform (compatibility). Runner paths, tests, docs, landing, and installers
+  updated; 27 tests green.
+
 ## Ultimate Best Seller Studio 1.0.0 — 2026-06-15
 
 Fork of [best-seller-studio](https://github.com/felipelobomotta-blip/best-seller-studio)
@@ -24,7 +34,7 @@ Fork of [best-seller-studio](https://github.com/felipelobomotta-blip/best-seller
 
 ### Changed
 - Rebranded the product layer to "Ultimate Best Seller Studio"; internal skill slugs
-  (`book-genesis-codex`, `book-bestseller-studio`) kept stable to avoid breaking
+  (`book-genesis-core`, `book-bestseller-studio`) kept stable to avoid breaking
   cross-references. Engine codename "book-genesis" preserved.
 - Rewired all pipeline + doc references from `humanizer` to `humanizer-pro`.
 

@@ -96,6 +96,6 @@ Write-Host "Agents:    $TargetAgents" -ForegroundColor Blue
 Write-Host "Knowledge: $TargetKnowledge" -ForegroundColor Blue
 Write-Host ""
 Write-Host "Next: run  python -m runner.cli doctor  to confirm the checkout is ready."
-Write-Host "Then open Claude Code and type /book-genesis-codex to start writing,"
+Write-Host "Then open Claude Code and type /book-genesis-core to start writing,"
 Write-Host "or /humanizer-pro to measure and de-AI a chapter."
 Write-Host ""

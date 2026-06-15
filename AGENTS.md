@@ -7,7 +7,7 @@ This repository contains Ultimate Best Seller Studio (engine codename: Book Gene
 When asked to create, plan, draft, audit, score, revise, or package a book, use the Universal Book Genesis Core unless the user explicitly asks for legacy V4/V5:
 
 ```text
-skills/book-genesis-codex/SKILL.md
+skills/book-genesis-core/SKILL.md
 ```
 
 The folder name is historical. Treat this as the current universal pipeline for Claude Code, Codex, Antigravity, Kimi, and other file-aware agents.
@@ -36,7 +36,7 @@ Use the `literary` register for fiction. To gate a whole manuscript on measured 
 Load the manifest before advancing phases:
 
 ```text
-skills/book-genesis-codex/references/pipeline/manifest.yaml
+skills/book-genesis-core/references/pipeline/manifest.yaml
 ```
 
 ## Rules
@@ -52,7 +52,7 @@ skills/book-genesis-codex/references/pipeline/manifest.yaml
 
 ## Agent-Specific Notes
 
-- Claude Code can run `/book-genesis-codex` after installing the full skill folder.
+- Claude Code can run `/book-genesis-core` after installing the full skill folder.
 - Codex can use this repo directly through `AGENTS.md` and the skill folder.
 - Antigravity can use this file as the repo-level playbook.
 - Kimi can use the full skill folder or the active phase prompt plus project state files.
@@ -62,12 +62,12 @@ skills/book-genesis-codex/references/pipeline/manifest.yaml
 
 - `/book-genesis`: V5 Craft Mode legacy orchestrator.
 - `/book-genesis-full`: full legacy production pipeline.
-- `/book-genesis-codex`: current portable command name kept for compatibility.
+- `/book-genesis-core`: current portable command name kept for compatibility.
 
 ## Public Documentation
 
 - `README.md`: public overview and commercial positioning.
-- `docs/book-genesis-codex.md`: universal core architecture.
+- `docs/book-genesis-core.md`: universal core architecture.
 - `docs/runner.md`: local runner and mechanical demo.
 - `docs/portability.md`: Claude Code, Codex, Antigravity, Kimi, and generic agent usage notes.
 - `docs/humanizer-pro-integration.md`: the Better Humanizer integration and human-band gate.

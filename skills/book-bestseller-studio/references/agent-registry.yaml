@@ -166,7 +166,7 @@ swarm_director:
 
 adversarial_auditor:
   label: "Adversarial Auditor"
-  skill: "skills/book-genesis-codex/SKILL.md"
+  skill: "skills/book-genesis-core/SKILL.md"
   mission: "Attack premise, structure, opening, pacing, coherence, market promise, AI texture, and score inflation before final score."
   timing: "Mandatory Phase 4."
   score_floor: "Blocks final score until audit complete"
@@ -203,7 +203,7 @@ revision_editor:
 
 scorekeeper:
   label: "Scorekeeper"
-  skill: "skills/book-genesis-codex/references/scoring/genesis-score-codex.md"
+  skill: "skills/book-genesis-core/references/scoring/genesis-score.md"
   mission: "Score only after audit/revision, enforce 8.5+ target as calibrated threshold, and block publication claims when floor dimensions fail."
   timing: "Phase 5 Final Score."
   score_floor: "8.5 calibrated floor target"
@@ -212,7 +212,7 @@ scorekeeper:
     - "evaluations/book-swarm"
     - "manuscript/chapters"
   outputs:
-    - "artifacts/09-genesis-score-codex.md"
+    - "artifacts/09-genesis-score.md"
   gates:
     - "Weakest major dimension controls readiness."
     - "Average score cannot hide any floor below target."
@@ -225,7 +225,7 @@ package_strategist:
   timing: "Phase 6 and package-reaction loops."
   score_floor: "8.5 package/market target"
   inputs:
-    - "artifacts/09-genesis-score-codex.md"
+    - "artifacts/09-genesis-score.md"
     - "foundation/positioning.md"
     - "evaluations/book-swarm"
   outputs:
