@@ -45,7 +45,7 @@ new quantitative gate.
 | Runtime deps | stdlib | stdlib (unchanged — still runs anywhere Python 3 runs) |
 
 Everything the upstream did well is intact: the file-backed pipeline, the agents, the
-Genesis Score, the knowledge corpora, the examples.
+Genesis Score, and the knowledge corpora.
 
 ---
 
@@ -86,6 +86,32 @@ The `book-orchestrator` agent runs the whole pipeline. You approve three times; 
 is automatic.
 
 > Prefer a console command? `pip install -e .` gives you `ubss` (alias: `book-genesis`).
+
+---
+
+## Compatibility
+
+**Built for [Claude Code](https://claude.ai/code) first** — that's where it's most native:
+skills load from `~/.claude/skills/`, agents from `~/.claude/agents/`, and you invoke them
+with slash commands (`/book-genesis-codex`, `/humanizer-pro`).
+
+**It also runs on any file-aware agent** — Codex, Antigravity, Kimi, and others — because the
+product is a reproducible folder of markdown, manifests, and contracts, not a binary:
+
+| Agent | How to run it |
+|---|---|
+| **Claude Code** | `./install.sh`, then `/book-genesis-codex` · `/humanizer-pro` (first-class) |
+| **Codex** | open the repo, point Codex at [`AGENTS.md`](AGENTS.md) and ask it to run the pipeline |
+| **Antigravity / Kimi / other** | open the repo and follow `AGENTS.md`; pass the `skills/book-genesis-codex/` folder |
+
+What's **identical everywhere**: the markdown skills/prompts, the Python runner (`ubss`,
+`doctor`, `humanize-score`), and the stylometric scoring — `stylo.py` returns the same
+numbers on every platform, so the **human-band gate is byte-for-byte reproducible**. What
+differs is only the model doing the writing (Claude vs. another), so the prose has a
+different flavor while the loop, gates, and measurements stay the same.
+
+Either way the deterministic scorer needs the submodule:
+`git submodule update --init --recursive`.
 
 ---
 

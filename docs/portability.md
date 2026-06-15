@@ -24,9 +24,7 @@ AGENTS.md
 skills/book-genesis-codex/
 docs/book-genesis-codex.md
 docs/portability.md
-docs/book-gallery.md
-examples/cases/
-assets/covers/
+docs/humanizer-pro-integration.md
 ```
 
 Do not copy only `SKILL.md`; the skill will lose the phase prompts, manifest, orchestration rules, and scoring contract.

@@ -51,12 +51,3 @@ Real gates remain:
 - professional copyedit/proofread before public publication;
 - market validation before launch spend.
 
-## Marketing assets
-
-- `assets/brand/bestseller-skills-banner.svg`
-- `assets/social/book-stack-showcase.svg`
-- `assets/social/card-pipeline.svg`
-- `assets/social/card-pitch.svg`
-- `assets/social/card-floor.svg`
-
-Use `assets/brand/bestseller-skills-banner.svg` as GitHub social preview.

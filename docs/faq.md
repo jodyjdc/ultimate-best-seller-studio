@@ -34,7 +34,7 @@ Everything that the system analysis identified as a structural ceiling was rebui
 - **5 exposition disguise techniques**
 - **Dialogue craft** expanded: interruptions, repetition, silence, responding to the wrong thing
 
-See docs/changelog.md for the full list organized by category.
+See [CHANGELOG.md](../CHANGELOG.md) for the full list organized by category.
 
 ### What changed in V4.1?
 

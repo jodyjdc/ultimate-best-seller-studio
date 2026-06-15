@@ -43,8 +43,16 @@ come nuovo gate quantitativo.
 | CI | nessuna | GitHub Actions (3.11–3.13) + ruff |
 | Dipendenze runtime | stdlib | stdlib (invariato — gira ovunque ci sia Python 3) |
 
-Tutto ciò che l'upstream faceva bene resta: pipeline su file, agenti, Genesis Score,
-corpora di conoscenza, esempi.
+Tutto ciò che l'upstream faceva bene resta: pipeline su file, agenti, Genesis Score
+e corpora di conoscenza.
+
+## Compatibilità
+
+**Pensato prima di tutto per [Claude Code](https://claude.ai/code)** (skill + agenti nativi,
+slash command `/book-genesis-codex`, `/humanizer-pro`). **Gira anche su qualsiasi agente che
+legge file** — Codex, Antigravity, Kimi — puntandolo a [`AGENTS.md`](AGENTS.md). Il runner
+Python e lo scoring (`stylo.py`) danno gli **stessi numeri ovunque**: il gate di banda umana è
+riproducibile bit-per-bit. Cambia solo il modello che scrive il testo.
 
 ---
 

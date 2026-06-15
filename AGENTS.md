@@ -70,6 +70,4 @@ skills/book-genesis-codex/references/pipeline/manifest.yaml
 - `docs/book-genesis-codex.md`: universal core architecture.
 - `docs/runner.md`: local runner and mechanical demo.
 - `docs/portability.md`: Claude Code, Codex, Antigravity, Kimi, and generic agent usage notes.
-- `docs/book-gallery.md`: 10-book proof gallery.
-- `SHOWCASE.md`: casebook summary.
-- `examples/cases/`: case studies.
+- `docs/humanizer-pro-integration.md`: the Better Humanizer integration and human-band gate.

@@ -40,10 +40,9 @@ voice-bank/
 *.pdf
 *.docx
 
-# State files (user-specific) — but keep the shipped example projects
+# State files (user-specific)
 STATE.yaml
 PROJECT_STATE.yaml
-!examples/**
 
 # Claude
 .claude/
@@ -53,4 +52,3 @@ AppData/
 **/AppData/
 **/Chrome/User Data/
 **/Google/Chrome/User Data/
-scripts/distribution/C*/
